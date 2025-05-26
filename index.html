@@ -1,103 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Juvenile Studios - Film Production</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      background: #0a0a0a; color: #eee;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-    }
-    a {
-      color: #f03e3e; text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-    .container {
-      max-width: 1100px; margin: 0 auto; padding: 20px;
-    }
-    header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 20px 0; border-bottom: 1px solid #222;
-    }
-    header h1 {
-      font-size: 1.8rem; letter-spacing: 3px; color: #f03e3e;
-      font-weight: 700; font-family: 'Oswald', sans-serif; cursor: default;
-    }
-    nav a {
-      margin-left: 25px; font-weight: 600; font-size: 1rem; letter-spacing: 1px;
-    }
-    .hero {
-      height: 70vh;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80') center center/cover no-repeat;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      text-align: center; color: #fff; position: relative;
-    }
-    .hero::before {
-      content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(10,10,10,0.7); z-index: 0;
-    }
-    .hero-content {
-      position: relative; z-index: 1; max-width: 700px; padding: 0 20px;
-    }
-    .hero-content h2 {
-      font-size: 3rem; letter-spacing: 5px; margin-bottom: 20px;
-      font-family: 'Oswald', sans-serif; text-transform: uppercase;
-    }
-    .hero-content p {
-      font-size: 1.2rem; font-weight: 300; margin-bottom: 30px; line-height: 1.4;
-    }
-    .btn-primary {
-      background: #f03e3e; border: none; padding: 12px 30px;
-      color: #fff; font-weight: 700; letter-spacing: 2px; cursor: pointer;
-      text-transform: uppercase; border-radius: 3px; transition: background 0.3s ease;
-    }
-    .btn-primary:hover {
-      background: #d33131;
-    }
-    footer {
-      background: #111; color: #555; text-align: center;
-      padding: 20px; font-size: 0.9rem; margin-top: 50px; border-top: 1px solid #222;
-    }
-    @media (max-width: 700px) {
-      .hero-content h2 { font-size: 2rem; }
-      nav a { margin-left: 15px; font-size: 0.9rem; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juvenile Studios</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="container">
-  <h1>Juvenile Studios</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Services</a>
-    <a href="#">Testimonials</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h2>Capturing Stories, Creating Magic</h2>
-    <p>Professional film production that brings your vision to life with cinematic excellence.</p>
-    <button class="btn-primary">Contact Us</button>
-  </div>
-</section>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="cinematic-section" style="background-image: url('IMG_3645.jpeg');">
+    <div class="content">
+      <h1>About Juvenile Studios</h1>
+      <p>We are creators, dreamers, and storytellers building visual art that moves people.</p>
+    </div>
+  </section>
 
-<footer>
-  <p>Contact us: 07399397018 | <a href="mailto:juvenilestudiostcl@gmail.com">juvenilestudiostcl@gmail.com</a> | 
-  <a href="https://www.instagram.com/1juvenilestudios?igsh=cmY0cWU1ZHgzb3Jo&utm_source=qr" target="_blank" rel="noopener">Instagram</a></p>
-  <p>&copy; 2025 Juvenile Studios. All rights reserved.</p>
-</footer>
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="cinematic-section" style="background-image: url('SI_5D93B5AD-9FB4-4CEB-88AF-E694111890D2.jpeg');">
+    <div class="content">
+      <h1>Our Projects</h1>
+      <p>From short films to visual experiments, explore our featured works.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="cinematic-section" style="background-image: url('IMG_3645.jpeg');">
+    <div class="content">
+      <h1>Contact Us</h1>
+      <p>Want to collaborate or say hello? Reach out to Juvenile Studios.</p>
+    </div>
+  </section>
 
 </body>
 </html>
